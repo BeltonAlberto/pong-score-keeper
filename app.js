@@ -1,11 +1,11 @@
 // Selecting elements
 
-const p1button = document.querySelector('.p1-button'),
-    p2button = document.querySelector('.p2-button'),
-    resetButton = document.querySelector('.reset-button'),
+const p1button = document.querySelector('#p1-button'),
+    p2button = document.querySelector('#p2-button'),
+    resetButton = document.querySelector('#reset-button'),
     p1Display = document.querySelector('.p1-display'),
     p2Display = document.querySelector('.p2-display'),
-    select = document.querySelector('.target');
+    select = document.querySelector('.target-num');
 
 // The score section
 
@@ -44,12 +44,13 @@ p2button.addEventListener('click', () => {
 });
 
 // choosing the the Winning number logic
-// here the arrow function syntax is not used here cause of the keyword
+// here the arrow function syntax is not used here cause of the this keyword
 
 select.addEventListener('change', function () {
     winningScore = +this.value;
     reset();
 });
+
 // reseting logic
 
 resetButton.addEventListener('click', reset);
