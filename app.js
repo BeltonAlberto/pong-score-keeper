@@ -28,6 +28,8 @@ p2.button.addEventListener('click', () => {
     updateScore(p2, p1);
 });
 
+// function keyword allows the 'this' keyword bellow
+
 select.addEventListener('change', function () {
     winningScore = +this.value;
     reset();
