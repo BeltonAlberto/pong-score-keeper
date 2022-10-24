@@ -2,4 +2,5 @@
  simple js game
 
 
- <a href="https://beltonalberto.github.io/pong-score-keeper/">
+
+ [see website ](https://beltonalberto.github.io/pong-score-keeper)
